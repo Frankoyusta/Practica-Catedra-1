@@ -39,16 +39,16 @@ public class EBook
     /// <summary>
     /// Availability of the eBook.
     /// </summary>
-    public required bool IsAvailable { get; set; }
+    public bool? IsAvailable { get; set; }
 
     /// <summary>
     /// Price of the eBook.
     /// </summary>
     [Range(1, int.MaxValue)]
-    public required int Price { get; set; }
+    public int? Price { get; set; }
 
     /// <summary>
     /// Stock of the eBook.
     /// </summary>
-    public required int Stock { get; set; }
+    public int? Stock { get; set; }
 }
